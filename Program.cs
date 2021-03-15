@@ -6,18 +6,42 @@ namespace consoleApp
     {
         static void Main(string[] args)
         {
+            //Example 2. write an application that for two provided inputs (name and lastname) print out the full name with spacebar
 
+            Console.WriteLine("What is your first name?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("What is your last name?");
+            string lastName = Console.ReadLine();
+
+            string fullName = name + " " + lastName;
+            Console.WriteLine($"Your full name is {fullName}");
+
+            Console.ReadLine();
+          
             //TYPE CONVERSION
 
             //IMPLICIT CONVERSION
 
-            double b = 12.87;
-            int a = 4;
-            b = b + a;
+            //double b = 12.87;
+            //int a = 4;
+            //b = b + a;
+            // the compiler can stores the result as a variable
 
-            Console.WriteLine($" The result of b is now {b}");
+            //int x = 21;
+            //int y = 5;
+            //double p = (double) x / y;
 
+            //using the convert class
 
+            //int a = 15;
+            //string s = a; // this is not allow, cannot implicittly convert string to int. to do that we need to introduced;
+
+            //int c = 15;
+            //string s1 = Convert.ToString(c); // or string s2 = c.ToString();
+            //Console.WriteLine($" The result of p is now {s1}");
+
+            Console.ReadLine();
 
 
 
