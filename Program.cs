@@ -5,19 +5,30 @@ namespace consoleApp
     class Program
     {
         static void Main(string[] args)
+
         {
+
+            // Working with String
+            /* 
+              *Substring, IndexOf, LastIndexOf
+              *Contains, StartsWith, EndsWith
+              *Remove, Insert
+              *ToLower, ToUpper
+             */
+            //Substring
+
             //Example 2. write an application that for two provided inputs (name and lastname) print out the full name with spacebar
 
-            Console.WriteLine("What is your first name?");
-            string name = Console.ReadLine();
+            //Console.WriteLine("What is your first name?");
+            //string name = Console.ReadLine();
 
-            Console.WriteLine("What is your last name?");
-            string lastName = Console.ReadLine();
+            //Console.WriteLine("What is your last name?");
+            //string lastName = Console.ReadLine();
 
-            string fullName = name + " " + lastName;
-            Console.WriteLine($"Your full name is {fullName}");
+            //string fullName = name + " " + lastName;
+            //Console.WriteLine($"Your full name is {fullName}");
 
-            Console.ReadLine();
+            //Console.ReadLine();
           
             //TYPE CONVERSION
 
@@ -41,7 +52,7 @@ namespace consoleApp
             //string s1 = Convert.ToString(c); // or string s2 = c.ToString();
             //Console.WriteLine($" The result of p is now {s1}");
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
 
 
@@ -59,17 +70,44 @@ namespace consoleApp
 
             // working with substring
 
-            //string testString = "Hello guys, im learnig C#. wow, it was awesome";
+            string testString = "HEllo guys, im learnig C#. wow, it was awesome";
 
-            //string partWithoutLength = testString.Substring(10);
-            // string partWithLength = testString.Substring(5, 8);
-            //int charPosition = testString.IndexOf('h');
+            string partWithoutLength = testString.Substring(10);
+            string partWithLength = testString.Substring(5, 10);
+            int charPosition = testString.IndexOf("l");
+            int stringPosition = testString.IndexOf("some");
+            int charPosWithStartIndex = testString.IndexOf('s', 10);
+            int stringPosWithStartIndex = testString.IndexOf("some", 10);
+            int lastPosition = testString.LastIndexOf('E');
+            int stringLastPosition = testString.LastIndexOf("is");
+            bool containResult = testString.Contains("some");
+            bool startsWithResult = testString.StartsWith("guys");
+            bool endsWithResult = testString.EndsWith("awesome");
+            string loweredString = testString.Remove(10);
+            string loweredStringWithCount = testString.Remove(10, 9);
+            string stringWithInsert = testString.Insert(46, "UPDATED");
+            string toLowerCase = testString.ToLower();
+            string toUpperCase = testString.ToUpper();
 
-             //Console.WriteLine(partWithLength);
-            //Console.WriteLine(partWithoutLength);
-            //Console.WriteLine(charPosition);
+            Console.WriteLine(toUpperCase);
+            Console.WriteLine(partWithLength);
+            Console.WriteLine(partWithoutLength);
+            Console.WriteLine(charPosition);
+            Console.WriteLine(stringPosition);
+            Console.WriteLine(charPosWithStartIndex);
+            Console.WriteLine(stringPosWithStartIndex);
+            Console.WriteLine(lastPosition);
+            Console.WriteLine(stringLastPosition);
+            Console.WriteLine(containResult);
+            Console.WriteLine(startsWithResult);
+            Console.WriteLine(endsWithResult);
+            Console.WriteLine(loweredString);
+            Console.WriteLine(loweredStringWithCount);
+            Console.WriteLine(stringWithInsert);
+            Console.WriteLine(toLowerCase);
 
-            //Console.ReadKey();
+
+            Console.ReadKey();
         }
     }
 }
