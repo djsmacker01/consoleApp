@@ -8,6 +8,32 @@ namespace consoleApp
 
         {
 
+
+            /*Questions 1. Create an application which accepts the name and the last name,space separated,as
+             * input then prints out the name in one row and last name in another row
+             
+
+             */
+
+            Console.WriteLine("Enter your full name, blank space separated");
+            string fullName = Console.ReadLine();
+
+            int blankPosition = fullName.IndexOf(' ');
+            string name = fullName.Substring(0, blankPosition);
+            string lastName = fullName.Substring(blankPosition + 1);
+
+            Console.WriteLine(name);
+            Console.WriteLine(lastName);
+
+
+
+
+
+
+
+
+
+
             // Working with String
             /* 
               *Substring, IndexOf, LastIndexOf
@@ -29,7 +55,7 @@ namespace consoleApp
             //Console.WriteLine($"Your full name is {fullName}");
 
             //Console.ReadLine();
-          
+
             //TYPE CONVERSION
 
             //IMPLICIT CONVERSION
@@ -70,41 +96,41 @@ namespace consoleApp
 
             // working with substring
 
-            string testString = "HEllo guys, im learnig C#. wow, it was awesome";
+            //string testString = "HEllo guys, im learnig C#. wow, it was awesome";
 
-            string partWithoutLength = testString.Substring(10);
-            string partWithLength = testString.Substring(5, 10);
-            int charPosition = testString.IndexOf("l");
-            int stringPosition = testString.IndexOf("some");
-            int charPosWithStartIndex = testString.IndexOf('s', 10);
-            int stringPosWithStartIndex = testString.IndexOf("some", 10);
-            int lastPosition = testString.LastIndexOf('E');
-            int stringLastPosition = testString.LastIndexOf("is");
-            bool containResult = testString.Contains("some");
-            bool startsWithResult = testString.StartsWith("guys");
-            bool endsWithResult = testString.EndsWith("awesome");
-            string loweredString = testString.Remove(10);
-            string loweredStringWithCount = testString.Remove(10, 9);
-            string stringWithInsert = testString.Insert(46, "UPDATED");
-            string toLowerCase = testString.ToLower();
-            string toUpperCase = testString.ToUpper();
+            //string partWithLength = testString.Substring(7, 10);
+            //string partWithoutLength = testString.Substring(10);
+            //int charPosition = testString.IndexOf("l");
+            //int stringPosition = testString.IndexOf("some");
+            //int charPosWithStartIndex = testString.IndexOf('s', 10);
+            //int stringPosWithStartIndex = testString.IndexOf("some", 10);
+            //int lastPosition = testString.LastIndexOf('E');
+            //int stringLastPosition = testString.LastIndexOf("is");
+            //bool containResult = testString.Contains("some");
+            //bool startsWithResult = testString.StartsWith("guys");
+            //bool endsWithResult = testString.EndsWith("awesome");
+            //string loweredString = testString.Remove(10);
+            //string loweredStringWithCount = testString.Remove(10, 9);
+            //string stringWithInsert = testString.Insert(46, "UPDATED");
+            //string toLowerCase = testString.ToLower();
+            //string toUpperCase = testString.ToUpper();
 
-            Console.WriteLine(toUpperCase);
-            Console.WriteLine(partWithLength);
-            Console.WriteLine(partWithoutLength);
-            Console.WriteLine(charPosition);
-            Console.WriteLine(stringPosition);
-            Console.WriteLine(charPosWithStartIndex);
-            Console.WriteLine(stringPosWithStartIndex);
-            Console.WriteLine(lastPosition);
-            Console.WriteLine(stringLastPosition);
-            Console.WriteLine(containResult);
-            Console.WriteLine(startsWithResult);
-            Console.WriteLine(endsWithResult);
-            Console.WriteLine(loweredString);
-            Console.WriteLine(loweredStringWithCount);
-            Console.WriteLine(stringWithInsert);
-            Console.WriteLine(toLowerCase);
+            //Console.WriteLine(toUpperCase);
+            //Console.WriteLine(partWithLength);
+            // Console.WriteLine(partWithoutLength);
+            //Console.WriteLine(charPosition);
+            //Console.WriteLine(stringPosition);
+            //Console.WriteLine(charPosWithStartIndex);
+            //Console.WriteLine(stringPosWithStartIndex);
+            //Console.WriteLine(lastPosition);
+            //Console.WriteLine(stringLastPosition);
+            //Console.WriteLine(containResult);
+            //Console.WriteLine(startsWithResult);
+            //Console.WriteLine(endsWithResult);
+            //Console.WriteLine(loweredString);
+            //Console.WriteLine(loweredStringWithCount);
+            //Console.WriteLine(stringWithInsert);
+            //Console.WriteLine(toLowerCase);
 
 
             Console.ReadKey();
